@@ -1,0 +1,23 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity ProgramSelector is
+    port (
+        clk : in std_logic;
+        sw : in std_logic_vector(1 downto 0);
+        program : out std_logic_vector(1 downto 0)
+    );
+end ProgramSelector;
+
+architecture Behavioral of ProgramSelector is
+begin
+    process(clk)
+    begin
+        if rising_edge(clk) then
+				program <= "00" when (sw = "00")    else
+							  "01" when (sw = "01")    else
+							  "10" when (sw = "10")    else
+							  "11"
+        end if;
+    end process;
+end Behavioral;

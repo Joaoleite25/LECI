@@ -1,0 +1,87 @@
+|ShiftRegister_Demo
+CLOCK_50 => ClkDividerN:clkDivider.clkIn
+reset => ShiftRegisterN:shiftReg.reset
+switches[0] => ShiftRegisterN:shiftReg.dataIn[0]
+switches[1] => ShiftRegisterN:shiftReg.dataIn[1]
+switches[2] => ShiftRegisterN:shiftReg.dataIn[2]
+switches[3] => ShiftRegisterN:shiftReg.dataIn[3]
+switches[4] => ShiftRegisterN:shiftReg.dataIn[4]
+switches[5] => ShiftRegisterN:shiftReg.dataIn[5]
+switches[6] => ShiftRegisterN:shiftReg.dataIn[6]
+switches[7] => ShiftRegisterN:shiftReg.dataIn[7]
+leds[0] << ShiftRegisterN:shiftReg.dataOut[0]
+leds[1] << ShiftRegisterN:shiftReg.dataOut[1]
+leds[2] << ShiftRegisterN:shiftReg.dataOut[2]
+leds[3] << ShiftRegisterN:shiftReg.dataOut[3]
+leds[4] << ShiftRegisterN:shiftReg.dataOut[4]
+leds[5] << ShiftRegisterN:shiftReg.dataOut[5]
+leds[6] << ShiftRegisterN:shiftReg.dataOut[6]
+leds[7] << ShiftRegisterN:shiftReg.dataOut[7]
+
+
+|ShiftRegister_Demo|ClkDividerN:clkDivider
+clkIn => s_divCounter[0].CLK
+clkIn => s_divCounter[1].CLK
+clkIn => s_divCounter[2].CLK
+clkIn => s_divCounter[3].CLK
+clkIn => s_divCounter[4].CLK
+clkIn => s_divCounter[5].CLK
+clkIn => s_divCounter[6].CLK
+clkIn => s_divCounter[7].CLK
+clkIn => s_divCounter[8].CLK
+clkIn => s_divCounter[9].CLK
+clkIn => s_divCounter[10].CLK
+clkIn => s_divCounter[11].CLK
+clkIn => s_divCounter[12].CLK
+clkIn => s_divCounter[13].CLK
+clkIn => s_divCounter[14].CLK
+clkIn => s_divCounter[15].CLK
+clkIn => s_divCounter[16].CLK
+clkIn => s_divCounter[17].CLK
+clkIn => s_divCounter[18].CLK
+clkIn => s_divCounter[19].CLK
+clkIn => s_divCounter[20].CLK
+clkIn => s_divCounter[21].CLK
+clkIn => s_divCounter[22].CLK
+clkIn => s_divCounter[23].CLK
+clkIn => s_divCounter[24].CLK
+clkIn => s_divCounter[25].CLK
+clkIn => clkOut~reg0.CLK
+clkOut <= clkOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ShiftRegister_Demo|ShiftRegisterN:shiftReg
+dataIn[0] => shiftRegister[1].DATAIN
+dataIn[1] => shiftRegister[2].DATAIN
+dataIn[2] => shiftRegister[3].DATAIN
+dataIn[3] => shiftRegister[4].DATAIN
+dataIn[4] => shiftRegister[5].DATAIN
+dataIn[5] => shiftRegister[6].DATAIN
+dataIn[6] => shiftRegister[7].DATAIN
+dataIn[7] => ~NO_FANOUT~
+clock => shiftRegister[0].CLK
+clock => shiftRegister[1].CLK
+clock => shiftRegister[2].CLK
+clock => shiftRegister[3].CLK
+clock => shiftRegister[4].CLK
+clock => shiftRegister[5].CLK
+clock => shiftRegister[6].CLK
+clock => shiftRegister[7].CLK
+reset => shiftRegister[0].ACLR
+reset => shiftRegister[1].ACLR
+reset => shiftRegister[2].ACLR
+reset => shiftRegister[3].ACLR
+reset => shiftRegister[4].ACLR
+reset => shiftRegister[5].ACLR
+reset => shiftRegister[6].ACLR
+reset => shiftRegister[7].ACLR
+dataOut[0] <= shiftRegister[0].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[1] <= shiftRegister[1].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[2] <= shiftRegister[2].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[3] <= shiftRegister[3].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[4] <= shiftRegister[4].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[5] <= shiftRegister[5].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[6] <= shiftRegister[6].DB_MAX_OUTPUT_PORT_TYPE
+dataOut[7] <= shiftRegister[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

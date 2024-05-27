@@ -1,0 +1,26 @@
+entity FreqDivider is
+	port(clkIn : in std_logic;
+		  k : in std_logic_vector(31 downto 0);
+		  clkOut : out std_logic);
+end FreqDivider;
+
+architecture Behavioral of FreqDivider is
+	signal s_counter : unsigned(31 downto 0);
+	signal s_halfWay : unsigned(31 downto 0);
+begin
+	s_halfWay <= (unsigned(k) / 2);
+
+	process(clkIn)
+	begin
+		if (rising_edge(clkIn)) then
+			 s_counter <= s_counter + 1;
+			 if s_counter >= s_halfWay then
+				clkOut <= NOT clkOut;
+				s_counter <= to_unsigned(0, s_counter'length);
+			 end if;
+		end if;
+	end process;
+	
+	clkOut <= NOT clkOut after (s_halfWay / 2);
+	
+end Behavioral;

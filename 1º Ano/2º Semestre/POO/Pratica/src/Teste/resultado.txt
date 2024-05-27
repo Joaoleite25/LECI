@@ -1,0 +1,3 @@
+Leite;Porto;5.0;10.0
+Gabi;Lisboa;80.0;240.0
+Stor;Algarve;25.0;75.0

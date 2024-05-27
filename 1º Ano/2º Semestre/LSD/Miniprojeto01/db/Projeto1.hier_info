@@ -1,0 +1,52 @@
+|projeto
+A0 => fulladder:b2v_inst.Ci
+A1 => fulladder:b2v_inst.b
+A2 => fulladder:b2v_inst.a
+A3 => fulladder:b2v_inst1.Ci
+N0 <= fulladder:b2v_inst1.S
+N1 <= fulladder:b2v_inst2.S
+N2 <= fulladder:b2v_inst2.Co
+
+
+|projeto|FullAdder:b2v_inst
+a => S.IN0
+a => Co.IN0
+a => Co.IN0
+b => S.IN1
+b => Co.IN1
+b => Co.IN0
+Ci => S.IN1
+Ci => Co.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|FullAdder:b2v_inst1
+a => S.IN0
+a => Co.IN0
+a => Co.IN0
+b => S.IN1
+b => Co.IN1
+b => Co.IN0
+Ci => S.IN1
+Ci => Co.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|projeto|FullAdder:b2v_inst2
+a => S.IN0
+a => Co.IN0
+a => Co.IN0
+b => S.IN1
+b => Co.IN1
+b => Co.IN0
+Ci => S.IN1
+Ci => Co.IN1
+Ci => Co.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+
+

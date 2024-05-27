@@ -1,0 +1,30 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity Decoder is
+    port (
+        enable : in std_logic;
+        inputs : in std_logic_vector(1 downto 0);
+        outputs : out std_logic_vector(1 downto 0)
+    );
+end Decoder;
+
+architecture Behavioral of Decoder is
+begin
+	process(enable, inputs)
+	begin
+		if (enable = '0') then
+			outputs <= "00";
+		else
+			if (inputs = "00") then
+				outputs <= "00";
+			elsif (inputs = "01") then
+				outputs <= "01";
+			elsif (inputs = "10") then
+				outputs <= "10";
+			else
+				outputs <= "11";
+			end if;
+		end if;
+	end process;
+end Behavioral;

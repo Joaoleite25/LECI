@@ -1,0 +1,165 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/andre/Documents/Estudos/UA/Ano 1/Semestre 2/LSD/Mini-Projetos/modelo1/simulation/qsim
+T_opt
+!s110 1713633686
+V1nShhB=<5:_;5^<8DfXiY0
+04 17 10 work fase1_vhd_vec_tst fase1_arch 1
+=1-749779ec896f-6623f995-16a-e90
+!s124 OEM10U3 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Efase1
+Z1 w1713633681
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 gn]m8U<PzXZH32IDQ4:hj3
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 cSe5`^NYM;IRV3WNS^Q7a2
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 ^oS01<AhH<ZbI@CNcPk2V0
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z9 DPx6 altera 28 altera_primitives_components 0 22 Y19K[Kjfb73Y`YfbP9Kf30
+!i122 0
+R0
+Z10 8modelo_1.vho
+Z11 Fmodelo_1.vho
+l0
+L80 1
+VIo80MH:JcE2GFmSnfHTPS1
+!s100 d2F7M6O5BI[lQKb3df9Ym1
+Z12 OL;C;2021.2;73
+32
+Z13 !s110 1713633684
+!i10b 1
+Z14 !s108 1713633684.000000
+Z15 !s90 -work|work|modelo_1.vho|
+Z16 !s107 modelo_1.vho|
+!i113 0
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 5 fase1 0 22 Io80MH:JcE2GFmSnfHTPS1
+!i122 0
+l146
+L101 377
+Vk3=`Oe8[:cl4GM]gC_mMY3
+!s100 3fDX[h3dX<7cQ=nMJ3c3m0
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
+Efase1_vhd_vec_tst
+Z19 w1713633680
+R7
+R8
+!i122 1
+R0
+Z20 8fase2.vwf.vht
+Z21 Ffase2.vwf.vht
+l0
+L32 1
+VZ2ULXkHB6gijI[kL82HBI0
+!s100 [8HcNWXk_m0n^ImziKShK2
+R12
+32
+R13
+!i10b 1
+R14
+Z22 !s90 -work|work|fase2.vwf.vht|
+Z23 !s107 fase2.vwf.vht|
+!i113 0
+R17
+R18
+Afase1_arch
+R7
+R8
+DEx4 work 17 fase1_vhd_vec_tst 0 22 Z2ULXkHB6gijI[kL82HBI0
+!i122 1
+l47
+L34 101
+VLojldGHM8cckkTbWn]_Af3
+!s100 oEnk>T]RAAbAN85k1^>cj3
+R12
+32
+R13
+!i10b 1
+R14
+R22
+R23
+!i113 0
+R17
+R18
+Ehard_block
+R1
+R4
+R2
+R6
+R7
+R8
+R3
+!i122 0
+R0
+R10
+R11
+l0
+L35 1
+VB]0;STalBkCB1_B4BXQDW2
+!s100 >mXi5[`cD`bFC`UBKA<om3
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
+Astructure
+R4
+R2
+R6
+R7
+R8
+R3
+DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
+!i122 0
+l65
+L51 20
+Via>5o7W??azG@W@@eFOTF0
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18

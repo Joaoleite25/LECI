@@ -1,0 +1,133 @@
+$comment
+	File created using the following command:
+		vcd file GateDemo.msim.vcd -direction
+$end
+$date
+	Mon Feb 19 15:28:59 2024
+$end
+$version
+	Questa Intel Starter FPGA Edition Version 2021.2
+$end
+$timescale
+	1ps
+$end
+
+$scope module gatedemo_vhd_vec_tst $end
+$var wire 1 ! LEDR [0] $end
+$var wire 1 " SW [1] $end
+$var wire 1 # SW [0] $end
+
+$scope module i1 $end
+$var wire 1 $ gnd $end
+$var wire 1 % vcc $end
+$var wire 1 & unknown $end
+$var wire 1 ' devoe $end
+$var wire 1 ( devclrn $end
+$var wire 1 ) devpor $end
+$var wire 1 * ww_devoe $end
+$var wire 1 + ww_devclrn $end
+$var wire 1 , ww_devpor $end
+$var wire 1 - ww_LEDR [0] $end
+$var wire 1 . ww_SW [1] $end
+$var wire 1 / ww_SW [0] $end
+$var wire 1 0 \LEDR[0]~output_o\ $end
+$var wire 1 1 \SW[1]~input_o\ $end
+$var wire 1 2 \SW[0]~input_o\ $end
+$var wire 1 3 \inst~combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0$
+1%
+x&
+1'
+1(
+1)
+1*
+1+
+1,
+00
+11
+02
+03
+1"
+0#
+1.
+0/
+0!
+0-
+$end
+#100000
+0"
+0.
+01
+#150000
+1"
+1.
+11
+#250000
+1#
+1/
+12
+13
+10
+1-
+1!
+#300000
+0"
+0.
+01
+03
+00
+0-
+0!
+#350000
+1"
+1.
+11
+13
+10
+1-
+1!
+#450000
+0"
+0.
+01
+03
+00
+0-
+0!
+#500000
+1"
+0#
+0/
+1.
+11
+02
+#550000
+0"
+0.
+01
+#650000
+1"
+1.
+11
+#700000
+0"
+0.
+01
+#800000
+1#
+1/
+12
+#850000
+1"
+1.
+11
+13
+10
+1-
+1!
+#1000000

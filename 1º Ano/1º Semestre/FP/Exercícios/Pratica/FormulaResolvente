@@ -1,0 +1,10 @@
+a = int(input("A? "))
+b = int(input("B? "))
+c = int(input("C? "))
+"""
+resultado1 = (-b - (b**2 + 4 * a * c)**0.5)*(2*a)
+resultado2 = (-b + (b**2 + 4 * a * c)**0.5)*(2*a)
+
+print("O x=", resultado1, "ou x=", resultado2)
+
+"""

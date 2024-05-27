@@ -1,0 +1,219 @@
+|fase1
+CLOCK_50 => blink:Blink_Prog2.clk
+CLOCK_50 => blink:Blink_Prog3.clk
+SW[0] => dec2_4en:system_core.inputs[0]
+SW[1] => dec2_4en:system_core.inputs[1]
+HEX0[0] << bin7decoder:opcao.decOut_n[0]
+HEX0[1] << bin7decoder:opcao.decOut_n[1]
+HEX0[2] << bin7decoder:opcao.decOut_n[2]
+HEX0[3] << bin7decoder:opcao.decOut_n[3]
+HEX0[4] << bin7decoder:opcao.decOut_n[4]
+HEX0[5] << bin7decoder:opcao.decOut_n[5]
+HEX0[6] << bin7decoder:opcao.decOut_n[6]
+LEDR[0] << LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] << LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] << LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] << LEDR.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[0] << LEDG.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[1] << LEDG.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[2] << LEDG.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[3] << LEDG.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fase1|Dec2_4En:system_core
+enable => outputs.OUTPUTSELECT
+enable => outputs.OUTPUTSELECT
+enable => outputs.OUTPUTSELECT
+enable => outputs.OUTPUTSELECT
+inputs[0] => Equal0.IN0
+inputs[0] => Equal1.IN1
+inputs[0] => Equal2.IN1
+inputs[1] => Equal0.IN1
+inputs[1] => Equal1.IN0
+inputs[1] => Equal2.IN0
+outputs[0] <= outputs.DB_MAX_OUTPUT_PORT_TYPE
+outputs[1] <= outputs.DB_MAX_OUTPUT_PORT_TYPE
+outputs[2] <= outputs.DB_MAX_OUTPUT_PORT_TYPE
+outputs[3] <= outputs.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fase1|Bin7Decoder:opcao
+enable => decOut_n.OUTPUTSELECT
+enable => decOut_n.OUTPUTSELECT
+enable => decOut_n.OUTPUTSELECT
+enable => decOut_n.OUTPUTSELECT
+enable => decOut_n.OUTPUTSELECT
+enable => decOut_n.OUTPUTSELECT
+enable => decOut_n[1].DATAIN
+binInput[0] => Equal0.IN0
+binInput[0] => Equal1.IN1
+binInput[0] => Equal2.IN1
+binInput[1] => Equal0.IN1
+binInput[1] => Equal1.IN0
+binInput[1] => Equal2.IN0
+decOut_n[0] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[1] <= enable.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[2] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[3] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[4] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[5] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+decOut_n[6] <= decOut_n.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fase1|fase3:Programa1
+enable => red[0].DATAIN
+enable => green[3].DATAIN
+enable => green[2].DATAIN
+enable => green[1].DATAIN
+enable => green[0].DATAIN
+enable => red[3].DATAIN
+enable => red[2].DATAIN
+enable => red[1].DATAIN
+green[0] <= enable.DB_MAX_OUTPUT_PORT_TYPE
+green[1] <= enable.DB_MAX_OUTPUT_PORT_TYPE
+green[2] <= enable.DB_MAX_OUTPUT_PORT_TYPE
+green[3] <= enable.DB_MAX_OUTPUT_PORT_TYPE
+red[0] <= enable.DB_MAX_OUTPUT_PORT_TYPE
+red[1] <= enable.DB_MAX_OUTPUT_PORT_TYPE
+red[2] <= enable.DB_MAX_OUTPUT_PORT_TYPE
+red[3] <= enable.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fase1|Blink:Blink_Prog2
+enable => s_counter[23].ACLR
+enable => s_counter[22].ACLR
+enable => s_counter[21].ACLR
+enable => s_counter[20].ACLR
+enable => s_counter[19].ACLR
+enable => s_counter[18].ACLR
+enable => s_counter[17].ACLR
+enable => s_counter[16].ACLR
+enable => s_counter[15].ACLR
+enable => s_counter[14].ACLR
+enable => s_counter[13].ACLR
+enable => s_counter[12].ACLR
+enable => s_counter[11].ACLR
+enable => s_counter[10].ACLR
+enable => s_counter[9].ACLR
+enable => s_counter[8].ACLR
+enable => s_counter[7].ACLR
+enable => s_counter[6].ACLR
+enable => s_counter[5].ACLR
+enable => s_counter[4].ACLR
+enable => s_counter[3].ACLR
+enable => s_counter[2].ACLR
+enable => s_counter[1].ACLR
+enable => s_counter[0].ACLR
+clk => s_counter[0].CLK
+clk => s_counter[1].CLK
+clk => s_counter[2].CLK
+clk => s_counter[3].CLK
+clk => s_counter[4].CLK
+clk => s_counter[5].CLK
+clk => s_counter[6].CLK
+clk => s_counter[7].CLK
+clk => s_counter[8].CLK
+clk => s_counter[9].CLK
+clk => s_counter[10].CLK
+clk => s_counter[11].CLK
+clk => s_counter[12].CLK
+clk => s_counter[13].CLK
+clk => s_counter[14].CLK
+clk => s_counter[15].CLK
+clk => s_counter[16].CLK
+clk => s_counter[17].CLK
+clk => s_counter[18].CLK
+clk => s_counter[19].CLK
+clk => s_counter[20].CLK
+clk => s_counter[21].CLK
+clk => s_counter[22].CLK
+clk => s_counter[23].CLK
+pulse <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fase1|Prog3:Programa2
+enable => light[0].DATAIN
+enable => light[3].DATAIN
+enable => light[2].DATAIN
+enable => light[1].DATAIN
+light[0] <= enable.DB_MAX_OUTPUT_PORT_TYPE
+light[1] <= enable.DB_MAX_OUTPUT_PORT_TYPE
+light[2] <= enable.DB_MAX_OUTPUT_PORT_TYPE
+light[3] <= enable.DB_MAX_OUTPUT_PORT_TYPE
+no_light[0] <= <GND>
+no_light[1] <= <GND>
+no_light[2] <= <GND>
+no_light[3] <= <GND>
+
+
+|fase1|Blink:Blink_Prog3
+enable => s_counter[25].ACLR
+enable => s_counter[24].ACLR
+enable => s_counter[23].ACLR
+enable => s_counter[22].ACLR
+enable => s_counter[21].ACLR
+enable => s_counter[20].ACLR
+enable => s_counter[19].ACLR
+enable => s_counter[18].ACLR
+enable => s_counter[17].ACLR
+enable => s_counter[16].ACLR
+enable => s_counter[15].ACLR
+enable => s_counter[14].ACLR
+enable => s_counter[13].ACLR
+enable => s_counter[12].ACLR
+enable => s_counter[11].ACLR
+enable => s_counter[10].ACLR
+enable => s_counter[9].ACLR
+enable => s_counter[8].ACLR
+enable => s_counter[7].ACLR
+enable => s_counter[6].ACLR
+enable => s_counter[5].ACLR
+enable => s_counter[4].ACLR
+enable => s_counter[3].ACLR
+enable => s_counter[2].ACLR
+enable => s_counter[1].ACLR
+enable => s_counter[0].ACLR
+clk => s_counter[0].CLK
+clk => s_counter[1].CLK
+clk => s_counter[2].CLK
+clk => s_counter[3].CLK
+clk => s_counter[4].CLK
+clk => s_counter[5].CLK
+clk => s_counter[6].CLK
+clk => s_counter[7].CLK
+clk => s_counter[8].CLK
+clk => s_counter[9].CLK
+clk => s_counter[10].CLK
+clk => s_counter[11].CLK
+clk => s_counter[12].CLK
+clk => s_counter[13].CLK
+clk => s_counter[14].CLK
+clk => s_counter[15].CLK
+clk => s_counter[16].CLK
+clk => s_counter[17].CLK
+clk => s_counter[18].CLK
+clk => s_counter[19].CLK
+clk => s_counter[20].CLK
+clk => s_counter[21].CLK
+clk => s_counter[22].CLK
+clk => s_counter[23].CLK
+clk => s_counter[24].CLK
+clk => s_counter[25].CLK
+pulse <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|fase1|Prog3:Programa3
+enable => light[0].DATAIN
+enable => light[3].DATAIN
+enable => light[2].DATAIN
+enable => light[1].DATAIN
+light[0] <= enable.DB_MAX_OUTPUT_PORT_TYPE
+light[1] <= enable.DB_MAX_OUTPUT_PORT_TYPE
+light[2] <= enable.DB_MAX_OUTPUT_PORT_TYPE
+light[3] <= enable.DB_MAX_OUTPUT_PORT_TYPE
+no_light[0] <= <GND>
+no_light[1] <= <GND>
+no_light[2] <= <GND>
+no_light[3] <= <GND>
+
+
