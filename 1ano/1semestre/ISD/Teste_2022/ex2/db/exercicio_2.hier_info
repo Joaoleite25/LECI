@@ -1,0 +1,82 @@
+|Block3
+F <= exercicio_2:inst.Y
+D => inst3.IN0
+D => exercicio_2:inst.i4
+D => exercicio_2:inst.i5
+B => exercicio_2:inst.S[1]
+C => exercicio_2:inst.S[2]
+A => exercicio_2:inst.S[0]
+
+
+|Block3|exercicio_2:inst
+Y <= 74157:inst2.Y1
+S[2] => 74157:inst2.SEL
+S[1] => 74157:inst1.SEL
+S[0] => 74157:inst3.SEL
+i0 => 74157:inst3.A1
+i_1 => 74157:inst3.B1
+i3 => 74157:inst3.B2
+i4 => 74157:inst3.A3
+i5 => 74157:inst3.B3
+i2 => 74157:inst3.A2
+i7 => 74157:inst3.B4
+i6 => 74157:inst3.A4
+
+
+|Block3|exercicio_2:inst|74157:inst2
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+
+|Block3|exercicio_2:inst|74157:inst1
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+
+|Block3|exercicio_2:inst|74157:inst3
+Y4 <= 25.DB_MAX_OUTPUT_PORT_TYPE
+A4 => 20.IN0
+GN => 12.IN0
+GN => 13.IN0
+SEL => 12.IN1
+SEL => 1.IN0
+B4 => 21.IN0
+Y3 <= 24.DB_MAX_OUTPUT_PORT_TYPE
+A3 => 18.IN0
+B3 => 19.IN0
+Y2 <= 23.DB_MAX_OUTPUT_PORT_TYPE
+A2 => 16.IN0
+B2 => 17.IN0
+Y1 <= 22.DB_MAX_OUTPUT_PORT_TYPE
+A1 => 14.IN0
+B1 => 15.IN0
+
+

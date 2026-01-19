@@ -1,0 +1,311 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11f MIXED_VERSIONS
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/ISD/teste/Teste/ex1/simulation/qsim
+T_opt
+Z2 !s110 1701107589
+VG^ReXE;in2XlEe3Db6MTT3
+04 23 16 work exercicio_1_vhd_vec_tst exercicio_1_arch 1
+=1-c87f54a660f3-6564d785-116-5570
+Z3 !s124 OEM10U3 
+Z4 o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2021.2;73
+R1
+T_opt1
+Z7 !s110 1701118319
+VaR1Kea<18HhBCil0BT7ZS3
+04 18 11 work block2_vhd_vec_tst block2_arch 1
+=1-c87f54a660f3-6565016f-1e1-8a4
+R3
+R4
+R5
+n@_opt1
+R6
+Eblock2
+Z8 w1701118318
+Z9 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z10 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 gn]m8U<PzXZH32IDQ4:hj3
+Z11 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z12 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z13 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z14 DPx10 cycloneive 21 cycloneive_components 0 22 cSe5`^NYM;IRV3WNS^Q7a2
+!i122 8
+R1
+Z15 8exercicio_1.vho
+Z16 Fexercicio_1.vho
+l0
+Z17 L78 1
+VOm[<aNlOBYD4Hg4^aeE211
+!s100 ka=7nf6Y1b[BF?8Pa<@jV0
+Z18 OL;C;2021.2;73
+32
+R7
+!i10b 1
+Z19 !s108 1701118319.000000
+Z20 !s90 -work|work|exercicio_1.vho|
+Z21 !s107 exercicio_1.vho|
+!i113 0
+Z22 o-work work
+Z23 tExplicit 1 CvgOpt 0
+Astructure
+R9
+R10
+R11
+R12
+R13
+R14
+DEx4 work 6 block2 0 22 Om[<aNlOBYD4Hg4^aeE211
+!i122 8
+l125
+L96 120
+ViOWn6]E^mfQQf?IUdaLEE3
+!s100 9G>n;T[HjeP4bgP59371I2
+R18
+32
+R7
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+vBlock2
+Z24 !s110 1701118094
+!i10b 1
+!s100 z1eGEN?XRdR[49L25QUiL3
+IbR`W@3e`m]6[PE]>T=D310
+R1
+w1701118093
+8exercicio_1.vo
+Fexercicio_1.vo
+!i122 2
+L0 32 117
+Z25 VDg1SIo80bB@j0V0VzS_@n1
+Z26 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z27 !s108 1701118094.000000
+!s107 exercicio_1.vo|
+!s90 -work|work|exercicio_1.vo|
+!i113 0
+Z28 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+n@block2
+Eblock2_vhd_vec_tst
+Z29 w1701118317
+R12
+R13
+!i122 9
+R1
+Z30 8Waveform1.vwf.vht
+Z31 FWaveform1.vwf.vht
+l0
+Z32 L32 1
+VlP_Dl9<729_MLKKBK_MA]2
+!s100 >2@go7;mKDZ;PW>0[1X[M2
+R18
+32
+R7
+!i10b 1
+R19
+Z33 !s90 -work|work|Waveform1.vwf.vht|
+Z34 !s107 Waveform1.vwf.vht|
+!i113 0
+R22
+R23
+Ablock2_arch
+R12
+R13
+DEx4 work 18 block2_vhd_vec_tst 0 22 lP_Dl9<729_MLKKBK_MA]2
+!i122 9
+l51
+L34 136
+VPi81TKFW^GI?zbUdeo=]h1
+!s100 h:>Zo62o4T;Bd9m3I=Si71
+R18
+32
+R7
+!i10b 1
+R19
+R33
+R34
+!i113 0
+R22
+R23
+vBlock2_vlg_vec_tst
+R24
+!i10b 1
+!s100 BT221W4:Z]0zY^4J3]@6;2
+I3GoN0ONI1MQAjVBCMbN@g2
+R1
+w1701118092
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 3
+L0 30 76
+R25
+R26
+r1
+!s85 0
+31
+R27
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 0
+R28
+R5
+n@block2_vlg_vec_tst
+Eexercicio_1
+Z35 w1701107588
+R9
+R10
+R11
+R12
+R13
+R14
+!i122 0
+R1
+R15
+R16
+l0
+R17
+VLfBg2jT<IZ]`9S7Q@5]:@2
+!s100 chY6Sc?>`I1O=fTioIJnV3
+R18
+32
+Z36 !s110 1701107588
+!i10b 1
+Z37 !s108 1701107588.000000
+R20
+R21
+!i113 0
+R22
+R23
+Astructure
+R9
+R10
+R11
+R12
+R13
+R14
+DEx4 work 11 exercicio_1 0 22 LfBg2jT<IZ]`9S7Q@5]:@2
+!i122 0
+l154
+L108 303
+VZ<57c1XUk]U:XLhjDILmM0
+!s100 bM32jWU5HVnbO5hRn:i2M2
+R18
+32
+R36
+!i10b 1
+R37
+R20
+R21
+!i113 0
+R22
+R23
+Eexercicio_1_vhd_vec_tst
+Z38 w1701107587
+R12
+R13
+!i122 1
+R1
+Z39 8Waveform.vwf.vht
+Z40 FWaveform.vwf.vht
+l0
+R32
+Vo2kI[4lFHo^]dYIG]VRo`3
+!s100 :nJPFVFYS]H:6VlieiVH42
+R18
+32
+R2
+!i10b 1
+R37
+Z41 !s90 -work|work|Waveform.vwf.vht|
+Z42 !s107 Waveform.vwf.vht|
+!i113 0
+R22
+R23
+Aexercicio_1_arch
+R12
+R13
+DEx4 work 23 exercicio_1_vhd_vec_tst 0 22 o2kI[4lFHo^]dYIG]VRo`3
+!i122 1
+l61
+L34 317
+VY<U9[>d7EQ`VEYQ6fRlAF3
+!s100 QWOF]SDRK[`<Qk4dEbz4d1
+R18
+32
+R2
+!i10b 1
+R37
+R41
+R42
+!i113 0
+R22
+R23
+Ehard_block
+R8
+R9
+R10
+R11
+R12
+R13
+R14
+!i122 8
+R1
+R15
+R16
+l0
+L35 1
+VB]0;STalBkCB1_B4BXQDW2
+!s100 >mXi5[`cD`bFC`UBKA<om3
+R18
+32
+R7
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23
+Astructure
+R9
+R10
+R11
+R12
+R13
+R14
+DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
+!i122 8
+l65
+L51 20
+Via>5o7W??azG@W@@eFOTF0
+!s100 [5;Wd8QGQ>@2NGoJ1I]Y43
+R18
+32
+R7
+!i10b 1
+R19
+R20
+R21
+!i113 0
+R22
+R23

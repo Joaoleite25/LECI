@@ -1,0 +1,33 @@
+MCE-ACTP3
+
+1. Quando esfregamos um balão no cabelo, os dois materiais atraem-se. Como é que varia a quantidade de carga do sistema balão + cabelo depois de serem esfregados?
+	c) mesma que antes
+
+2. Três objetos A, B, C, o objeto A e B repelem-se, o objeto B e C repelem-se. Quais as afirmações são verdadeiras?
+	a) A e C tem cargas do mesmo nível
+	c) Todas tem carga do msm sinal
+
+3. O objeto A tem carga +2uc e o objeto B +6uc. Qual das seguintes afirmações sobre as forças elétricas entre os objetos é verdadeira?
+	b) F-> AB  =  -F-> BA
+
+4. Uma carga de teste de +3uc é colocada no ponto P, onde o campo elétrico esta dirigido para a direita com intensidade 4x10^6 NC^-1. Se a carga de teste é susbtituida por outra de -3uc o campo em P.
+	a) Não é afetado
+
+5. Uma superficie esférica com R = 1m tem uma carga de 1uc no seu centro. Se o raio diminui para 0,5m como vai variar o fluxo e o campo na superfície?
+	d) O fluxo não muda e o campo aumenta
+
+6. As cargas que contribuem para o campo elétrico total na superfície S'?
+	b) q2 e q3
+
+7. A diferença de Potencial
+	Delta V = Delta B - Delta A
+	b) é negativa
+	
+8. Uma carga negativa é deslocada do ponto A para o ponto B. A variação de energia potencial da carga neste possui
+	a) é positiva
+
+9.Numa certa região do espaço o campo elétrico é nulo. Então podemos colcuir q o potencial eletrico nessa região é
+	b) constante
+
+10. Uma Tecla do Teclado de um pc é construída do modo ilustrado. Quando a tecla é pressionada o … é comprimido e, nesse caso, a capacidade
+	a) aumenta

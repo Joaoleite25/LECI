@@ -1,0 +1,87 @@
+	.data
+	
+	.eqv	exit, 10	
+	
+	.text
+	.globl main
+main:
+	
+	
+	li	$v0, exit
+	syscall
+	
+###	func1
+	# Mapa de Registos:
+	# $s0 = res
+	# $s1 = i
+	# $s2 = f1
+	# $s3 = k
+	# $s4 = av
+func1:			# func1(int *f1, int k, char *av[]), $a0, $a1, $a2
+	addi	$sp, $sp, -24
+	sw	$ra, 0($sp)
+	sw	$s0, 4($sp)
+	sw	$s1, 8($sp)
+	sw	$s2, 12($sp)
+	sw	$s3, 16($sp)		# i
+	sw	$s4, 20($sp)		# res
+	
+	move	$s0, $a0			# f1
+	move	$s1, $a1			# k
+	move	$s2, $a2			# av
+	
+if:	blt	$s1, 2, else
+	bgt	$s1, SIZE, else		# k >= 2 && k <= SIZE
+	
+	li	$s3, 2			# i=2
+do:	
+	addu	$a0, $s2, $s3
+	jal	toi
+	mul	$t1, $s3, 4
+	addiu	$t0, $s0, $t1		# f1[i]
+	sw	$v0, 0($t0)			# guardar 
+	
+	addiu	$s3, $s3, 1			# i++
+	blt	$s3, $s1, do		# i < k
+enddo:	
+	or	$a0, $s0, $0
+	or	$a1, $s1, $0
+	jal	avz	
+	move	$s4, $v0		# res = avz(f1, k)
+	move	$a0, $s4
+	li	$v0, print_int10
+	syscall			# print(res)
+	
+	j	endif
+else:	
+	la	$a0, str
+	li	$v0, print_string
+	syscall			# print("Invalid argc")
+	li	$s4, -1		# res = -1	
+endif:	
+	
+	move	$v0, $s4		# return res;	
+		
+	lw	$ra, 0($sp)
+	lw	$s0, 4($sp)
+	lw	$s1, 8($sp)
+	lw	$s2, 12($sp)
+	lw	$s3, 16($sp)
+	lw	$s4, 20($sp)
+	addiu	$sp, $sp, 24
+	
+	jr	$ra
+
+
+##	toi
+toi:	
+	
+	
+	jr	$ra
+
+
+## 	avz
+avz:	
+	
+	
+	jr	$ra
