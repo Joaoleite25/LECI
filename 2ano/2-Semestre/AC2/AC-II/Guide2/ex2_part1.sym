@@ -1,0 +1,11 @@
+GAS LISTING ex2_part1.s 			page 1
+
+
+DEFINED SYMBOLS
+         ex2_part1.s:6      .text:0000000000000000 main
+         ex2_part1.s:12     .text:0000000000000010 while
+         ex2_part1.s:36     .text:0000000000000050 delay
+         ex2_part1.s:42     .text:0000000000000060 while_delay
+         ex2_part1.s:48     .text:000000000000007c endw_delay
+
+NO UNDEFINED SYMBOLS

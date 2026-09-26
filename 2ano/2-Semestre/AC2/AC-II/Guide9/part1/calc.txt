@@ -1,0 +1,23 @@
+
+1.a)
+    T1:
+
+    fout = 5Hz
+
+    Kpresc = PBClk/((PRx+1)*fout) = 20Mhz/((65525+1)*5) = 61 -> 64
+
+    foutpresc = PBClk/Kpresc = 20MHz/64 = 312500Hz
+
+    PR1 = 312500/5 -1 = 62499
+
+
+    T3:
+
+    fout = 100Hz
+
+    Kpresc = 20Mhz((65526)*100) = 3 -> 4
+
+    foutpresc = PBClk/Kpresc = 20MHz/64 = 312500H
+
+    PR3 = 312500/100 - 1 = 3124
+

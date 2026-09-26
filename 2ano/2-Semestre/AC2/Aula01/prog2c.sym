@@ -1,0 +1,11 @@
+GAS LISTING prog2c.s 			page 1
+
+
+DEFINED SYMBOLS
+            prog2c.s:3      *ABS*:0000000000000005 readint10
+            prog2c.s:4      *ABS*:0000000000000006 printint
+            prog2c.s:5      *ABS*:0000000000000007 printint10
+            prog2c.s:6      *ABS*:0000000000000008 printstr
+            prog2c.s:10     .text:0000000000000000 main
+
+NO UNDEFINED SYMBOLS

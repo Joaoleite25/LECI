@@ -1,0 +1,12 @@
+GAS LISTING ex1b.s 			page 1
+
+
+DEFINED SYMBOLS
+              ex1b.s:7      .text:0000000000000000 main
+              ex1b.s:10     .text:0000000000000004 do
+              ex1b.s:14     .text:0000000000000010 if
+              ex1b.s:22     .text:000000000000002c else
+              ex1b.s:27     .text:0000000000000038 while
+              ex1b.s:33     .text:0000000000000050 enddo
+
+NO UNDEFINED SYMBOLS

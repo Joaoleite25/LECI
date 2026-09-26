@@ -1,0 +1,16 @@
+GAS LISTING ex2.s 			page 1
+
+
+DEFINED SYMBOLS
+               ex2.s:1      *ABS*:00000000bf886100 TRISE_ADDR
+               ex2.s:2      *ABS*:00000000bf886120 LATE_ADDR
+               ex2.s:3      *ABS*:00000000bf8860c0 TRISD_ADDR
+               ex2.s:4      *ABS*:00000000bf8860e0 LATD_ADDR
+               ex2.s:10     .text:0000000000000000 main
+               ex2.s:28     .text:0000000000000038 while
+               ex2.s:55     .text:0000000000000088 delay
+               ex2.s:48     .text:0000000000000078 exit
+               ex2.s:62     .text:0000000000000098 while_delay
+               ex2.s:68     .text:00000000000000b4 endw_delay
+
+NO UNDEFINED SYMBOLS

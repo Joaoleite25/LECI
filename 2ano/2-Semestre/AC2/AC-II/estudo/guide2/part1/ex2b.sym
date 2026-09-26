@@ -1,0 +1,11 @@
+GAS LISTING ex2b.s 			page 1
+
+
+DEFINED SYMBOLS
+              ex2b.s:6      .text:0000000000000000 main
+              ex2b.s:13     .text:0000000000000010 while
+              ex2b.s:40     .text:0000000000000050 delay
+              ex2b.s:44     .text:0000000000000058 while_delay
+              ex2b.s:54     .text:000000000000007c endwhile
+
+NO UNDEFINED SYMBOLS

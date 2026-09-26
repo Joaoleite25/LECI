@@ -1,0 +1,11 @@
+part1)
+ 4)
+    T1:
+        fout = 5Hz
+        Kprescaler = 64
+        PR1 = 62499
+
+    T3: 
+        fout = 25Hz
+        Kprescaler = 16
+        PR3 = 49999

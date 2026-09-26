@@ -1,0 +1,12 @@
+GAS LISTING prog1a.s 			page 1
+
+
+DEFINED SYMBOLS
+            prog1a.s:3      *ABS*:000000000000000c resetCoreTimer
+            prog1a.s:4      *ABS*:000000000000000b readCoreTimer
+            prog1a.s:5      *ABS*:0000000000000003 putchar
+            prog1a.s:6      *ABS*:0000000000000006 printint
+            prog1a.s:10     .text:0000000000000000 main
+            prog1a.s:13     .text:0000000000000004 while
+
+NO UNDEFINED SYMBOLS
